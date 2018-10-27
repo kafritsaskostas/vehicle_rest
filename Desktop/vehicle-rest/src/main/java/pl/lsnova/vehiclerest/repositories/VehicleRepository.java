@@ -2,13 +2,15 @@ package pl.lsnova.vehiclerest.repositories;
 
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 import pl.lsnova.vehiclerest.model.Vehicle;
 
+@Repository
 public interface VehicleRepository extends CrudRepository<Vehicle, Long> {
 
-    Vehicle save(Long vehicleId, Vehicle vehicle);
+    Vehicle save(Vehicle vehicle);
 
-    void removeById(Long vehicleId);
+    void removeByVehicleId(Long vehicleId);
 
-    Vehicle getVehicleById(Long vehicleId);
+    Vehicle getVehicleByVehicleId(Long vehicleId);
 }
