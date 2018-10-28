@@ -1,5 +1,6 @@
 package pl.lsnova.vehiclerest.services;
 
+import org.springframework.stereotype.Service;
 import pl.lsnova.vehiclerest.model.Vehicle;
 
 public interface VehicleService {
